@@ -1,0 +1,7 @@
+CREATE TABLE items (
+  id UUID PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  description VARCHAR NOT NULL,
+  price DOUBLE PRECISION NOT NULL,
+  merchant_name VARCHAR NOT NULL
+);

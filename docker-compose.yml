@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  postgres:
+    container_name: db-feira-do-rolo
+    image: postgres:15
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: feiradorolo
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: feiradorolo
+    ports:
+      - "5432:5432"
